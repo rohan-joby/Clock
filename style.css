@@ -4,7 +4,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 body {
@@ -12,6 +12,7 @@ body {
   background: radial-gradient(rgb(1, 84, 133), rgba(5, 140, 162, 1));
   background-repeat: no-repeat;
   background-size: auto;
+  height: 100vh;
 }
 
 .heading {
@@ -23,7 +24,6 @@ body {
   margin: 1rem;
 }
 
-
 .clock {
   height: 25rem;
   width: 25rem;
@@ -31,7 +31,43 @@ body {
   border: 5px solid rgb(230, 229, 229);
   box-shadow: 0 0 20px rgb(145, 145, 145);
   position: relative;
-  margin: 10vh auto;
+  margin: 6vh auto 10vh auto;
+}
+
+.clock::after {
+  content: "12";
+  position: absolute;
+  font-size: 1.4rem;
+  font-weight: 900;
+  left: 47.5%;
+  top: 1%;
+}
+
+.clock::before {
+  content: "6";
+  position: absolute;
+  font-size: 1.4rem;
+  font-weight: 900;
+  left: 48%;
+  bottom: 1%;
+}
+
+.clock-body::after {
+  content: "3";
+  position: absolute;
+  font-size: 1.24rem;
+  font-weight: 900;
+  top: 48%;
+  right: 2%;
+}
+
+.clock-body::before {
+  content: "9";
+  position: absolute;
+  font-size: 1.4rem;
+  font-weight: 900;
+  top: 48%;
+  left: 2%;
 }
 
 .hand {
@@ -47,10 +83,10 @@ body {
 .second-hand {
   background-color: rgb(131, 0, 0);
   height: 1.5px;
-  width: 50%;
+  width: 48%;
   position: absolute;
   transition-timing-function: ease-in;
-  /* transform-origin: 100%; */
+  margin-left: 2%;
 }
 
 .minute-hand {
@@ -58,7 +94,6 @@ body {
   width: 40%;
   position: absolute;
   border-radius: 4px;
-  /* transform-origin: 100%; */
   margin-left: 10%;
 }
 
@@ -68,7 +103,6 @@ body {
   width: 30%;
   margin-left: 20%;
   position: absolute;
-  /* transform-origin: 100%; */
 }
 
 @media screen and (max-width: 450px) {
@@ -76,20 +110,25 @@ body {
     background: radial-gradient(rgb(1, 84, 133), rgba(5, 140, 162, 1));
   }
 
-  .heading{
-      font-size: 2rem;
+  .heading {
+    font-size: 2rem;
   }
   .clock {
     height: 20rem;
     width: 20rem;
-    margin: 35% auto;
+    margin: 15vh auto;
   }
 }
 
-footer{
-    background-color: rgb(63, 4, 4);
-    color: rgb(236, 236, 236);
-    padding:1rem;
-    margin-bottom: 0;
-    border-top-left-radius: 10px;
+footer {
+  background-color: rgb(63, 4, 4);
+  color: rgb(236, 236, 236);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  padding: 1rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0;
+  border-top-left-radius: 10px;
 }
