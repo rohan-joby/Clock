@@ -82,7 +82,7 @@ body {
   .clock {
     height: 20rem;
     width: 20rem;
-    margin: 30% auto;
+    margin: 35% auto;
   }
 }
 
@@ -90,5 +90,6 @@ footer{
     background-color: rgb(63, 4, 4);
     color: rgb(236, 236, 236);
     padding:1rem;
+    margin-bottom: 0;
     border-top-left-radius: 10px;
 }
