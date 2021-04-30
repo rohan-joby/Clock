@@ -76,10 +76,13 @@ body {
     background: radial-gradient(rgb(1, 84, 133), rgba(5, 140, 162, 1));
   }
 
+  .heading{
+      font-size: 2rem;
+  }
   .clock {
-    height: 15rem;
-    width: 15rem;
-    margin: 40% auto;
+    height: 20rem;
+    width: 20rem;
+    margin: 30% auto;
   }
 }
 
