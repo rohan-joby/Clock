@@ -30,22 +30,35 @@ body {
 .hand {
   width: 50%;
   position: absolute;
-  top: 50%;
   transform-origin: 100%;
+  top: 50%;
   transform: rotate(90deg);
   transition: transform 0.05s;
   background-color: black;
 }
 
 .second-hand {
-  height: 2px;
+  background-color: rgb(131, 0, 0);
+  height: 1.5px;
+  width: 50%;
+  position: absolute;
+  /* transform-origin: 100%; */
 }
 
 .minute-hand {
-  height: 2.5px;
+  height: 4px;
+  width: 40%;
+  position: absolute;
+  border-radius: 4px;
+  /* transform-origin: 100%; */
+  margin-left: 10%;
 }
 
 .hour-hand {
-  height: 6px;
-  background-color: rgb(131, 0, 0);
+  height: 7.5px;
+  border-radius: 5px;
+  width: 30%;
+  margin-left: 20%;
+  position: absolute;
+  /* transform-origin: 100%; */
 }
