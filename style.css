@@ -9,26 +9,32 @@
 
 body {
   text-align: center;
+  background: rgb(99, 99, 179);
+  background: radial-gradient(
+    circle,
+    rgb(1, 84, 133) 22%,
+    rgba(5, 140, 162, 1) 66%
+  );
 }
 
 .clock {
   height: 25rem;
   width: 25rem;
   border-radius: 50%;
-  background-color: white;
-  border: 3px solid black;
+  border: 5px solid rgb(230, 229, 229);
+  box-shadow: 0 0 20px rgb(145, 145, 145);
   position: relative;
   margin: 15vh auto;
 }
 
 .hand {
   width: 50%;
-  background-color: black;
   position: absolute;
   top: 50%;
   transform-origin: 100%;
   transform: rotate(90deg);
   transition: transform 0.05s;
+  background-color: black;
 }
 
 .second-hand {
@@ -41,4 +47,5 @@ body {
 
 .hour-hand {
   height: 6px;
+  background-color: rgb(131, 0, 0);
 }
