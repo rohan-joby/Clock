@@ -11,12 +11,12 @@ function setClock() {
 
   //setting minutes hand movement
   const minute = time.getMinutes();
-  const minuteDeg = (minute / 60) * 360 + 90; //+90 to acccount for 90deg rotationn applied initially
+  const minuteDeg = (minute / 60) * 360 + 90 + (second * 0.1); //+90 to acccount for 90deg rotationn applied initially
   minuteHand.style.transform = `rotate(${minuteDeg}deg)`;
 
   //setting hours hand movement
   const hour = time.getHours();
-  const hourDeg = (hour / 12) * 360 + 90; //+90 to acccount for 90deg rotationn applied initially
+  const hourDeg = (hour / 12) * 360 + 90 + (second * (1 / 120)); //+90 to acccount for 90deg rotationn applied initially
   hourHand.style.transform = `rotate(${hourDeg}deg)`;
 }
 
