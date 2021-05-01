@@ -9,7 +9,11 @@
 
 body {
   text-align: center;
-  background: radial-gradient(rgb(1, 84, 133), rgba(5, 140, 162, 1));
+  background: radial-gradient(
+    circle,
+    rgba(77, 186, 185, 1) 10%,
+    rgba(5, 140, 162, 1) 48%
+  );
   background-repeat: no-repeat;
   background-size: auto;
   height: 100vh;
@@ -107,7 +111,11 @@ body {
 
 @media screen and (max-width: 450px) {
   body {
-    background: radial-gradient(rgb(1, 84, 133), rgba(5, 140, 162, 1));
+    background: radial-gradient(
+      circle,
+      rgba(77, 186, 185, 1) 15%,
+      rgba(5, 140, 162, 1) 48%
+    );
   }
 
   .heading {
